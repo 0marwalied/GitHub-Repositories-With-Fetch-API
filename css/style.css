@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 300vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  padding: 20px;
+  gap: 20px;
+  width: fit-content;
+  margin: 20px auto;
+  height: 90px;
+
+  .get-btn {
+    height: 100%;
+    background-color: #ff6231;
+    color: white;
+    border: none;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .get-btn:hover {
+    background-color: white;
+    color: #ff6231;
+  }
+
+  input {
+    height: 100%;
+    width: 600px;
+    padding: 0 10px;
+    border: none;
+    outline-color: #ff6231;
+    font-size: 19px;
+  }
+}
+
+.repos {
+  margin: auto;
+  background-color: #e0e0e0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .repo {
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .repo-info {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      padding: 10px;
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .stars,.link {
+        font-size: 18px;
+        background-color: #007b8a;
+        padding: 5px 15px;
+        color: white;
+        width: 100px;
+        text-align: center;
+        border-radius: 5px;
+      }
+      .link {
+        background-color: #ff4b63;
+        text-decoration: none;
+      }
+    }
+  }
+}
