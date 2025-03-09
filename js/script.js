@@ -3,15 +3,14 @@ let container = document.querySelector(".container");
 let input = document.querySelector("input");
 let getBtn = document.querySelector(".get-btn");
 repos.style.width = container.offsetWidth + "px";
-if(repos.children.length==0){
-  repos.style.display='none';
+if (repos.children.length == 0) {
+  repos.style.display = "none";
 }
 
-let username="";
+let username = "";
 input.addEventListener("input", (e) => {
   username = e.target.value;
 });
-
 
 getBtn.addEventListener("click", () => {
   fetch(`https://api.github.com/users/${username}/repos`)
@@ -39,5 +38,4 @@ getBtn.addEventListener("click", () => {
         repos.innerHTML = output;
       }
     });
-  
 });
