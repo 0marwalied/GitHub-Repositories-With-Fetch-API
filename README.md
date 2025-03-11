@@ -1,17 +1,16 @@
-# Typing Speed Test
+# GitHub Repositories Fetcher
 
-A simple and interactive typing speed test website that calculates words per minute (WPM) and accuracy based on user input.
+A simple web app that fetches and displays GitHub repositories using the GitHub API.
 
-🔗 **Live Demo:** [Typing Speed Test](https://0marwalied.github.io/Typing-Speed-Test/)
+🔗 **Live Demo:** [GitHub Repositories Fetcher](https://0marwalied.github.io/GitHub-Repositories-With-Fetch-API/)
 
 ---
 
 ## Features
 
-✅ Random word selection for typing test  
-✅ Adjustable time intervals (15s, 30s, 60s, 120s)  
-✅ Real-time WPM and accuracy calculation  
-✅ Visual feedback for correct and incorrect keystrokes  
+✅ Fetch repositories by entering a GitHub username  
+✅ Display repository names, stars, and direct links  
+✅ Error handling for invalid usernames  
 ✅ Responsive and user-friendly design  
 
 ---
@@ -20,12 +19,22 @@ A simple and interactive typing speed test website that calculates words per min
 
 - **HTML** - Structure of the website  
 - **CSS** - Styling and layout  
-- **JavaScript (ES6+)** - Logic for typing test, WPM calculation, and UI interactions  
+- **JavaScript (ES6+)** - Logic for fetching and displaying repositories  
+- **Fetch API** - To retrieve data from GitHub  
+- **GitHub API** - To access public repositories  
 
 ---
 
-## Installation & Usage
+## How to Use
+
+1. Enter a GitHub username in the input field.  
+2. Click the "Get Repos" button.  
+3. The repositories will be displayed with details like names, stars, and links.  
+
+---
+
+## Installation & Setup
 
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/0marwalied/Typing-Speed-Test.git
+   git clone https://github.com/0marwalied/GitHub-Repositories-With-Fetch-API.git
